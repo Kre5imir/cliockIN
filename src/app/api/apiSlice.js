@@ -3,7 +3,7 @@ import { setCredentials } from '../../features/auth/authSlice'
 //change for development
 const baseQuery = fetchBaseQuery({
     //change this url for production
-    baseUrl: 'https://clockin.onrender.com',
+    baseUrl: 'https://clockin-api.onrender.com',
     credentials: 'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token
